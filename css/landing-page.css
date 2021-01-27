@@ -1,0 +1,275 @@
+/*
+*
+* Author Bruno Gomes 
+* Project-49 - Version 1.1
+* 
+*/
+/* ============ LAYOUT COMPARTILHADO  ============= */
+:root{
+    --color-primary: #FF7F50;
+    --color-secondary: #FFE5B4;
+
+    --color-button-blue: #000080;
+    --color-button-blush: #DE5D83;
+    --color-button-hover: #AAF0D1;
+    
+}
+
+.btn-personalizado {
+    box-sizing: border-box;
+    color: white;
+    padding: 1rem;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.btn-personalizado:hover {
+
+    background: var(--color-button-hover);
+
+}
+
+.btn-azul {
+    background-color: var(--color-button-blue);
+    border-color: var(--color-button-blue);
+}
+
+.btn-rosa {
+    background-color: var(--color-button-blush);
+    border-color: var(--color-button-blush);
+}
+
+.centralizar-botao {
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+/* ============ LAYOUT INDEX ============= */
+
+.conteudo {
+    background: var(--color-primary);
+    height: 100%;
+    display: flex;
+
+}
+
+.foto-capa {
+    margin-left: 3rem;
+    padding: 0 1rem 0 1rem;
+    background: var(--color-button-hover);
+
+}
+
+.foto-capa img {
+    max-height: 99vh;
+}
+
+.text-presentation {
+    font-size: 100%;
+    text-align: center;
+}
+
+.text-presentation .title {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.text-presentation .text-p {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px){
+    .text-presentation .title {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    .text-presentation .text-p {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* ============ LAYOUT CONTENT ============= */
+.page-content {
+    background: var(--color-primary);
+    height: 300px;
+}
+
+.header-title {
+    margin-top: 15%;
+    margin-left: 2%;
+}
+
+section {
+    height: 95%;
+    padding: 5%;
+    margin-top: 10%;
+
+}
+
+/* ============ LAYOUT FINAL PAGE ============= */
+
+.front-image{
+    background-color: var(--color-button-hover);
+    padding: 1% 0 1% 0;
+    margin-top: 3%;
+    
+}
+
+.front-image img{
+    position: relative;
+    width: 100%;
+}
+
+.front-image figcaption{
+    top: 53px;
+    position: absolute;
+    display: none;
+    color: white;
+    text-shadow: 1px 1px solid;
+    background: rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    font-family: Aclonica;
+    text-align: center;
+    line-height: 3rem;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.front-image:hover figcaption{
+    display: block;
+}
+
+.title {
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+@media screen and (max-width: 600px){
+    .title {
+        
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    .front-image figcaption{
+        width: 100%;
+        position: absolute;
+        font-size: 1rem;
+        display: block;
+        top: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .d-grid .centralizar-botao {
+        margin-top: 300%;
+
+    }
+
+}
+
+
+/* ============ TIPOGRAFIA ============= */
+
+@font-face {
+    font-family: "Aclonica";
+    src: url("../fonts/Aclonica-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Advent Pro";
+    src: url("../fonts/AdventPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Advent Pro Bold";
+    src: url("../fonts/AdventPro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Advent Pro Light";
+    src: url("../fonts/AdventPro-Light.ttf") format("truetype");
+}
+
+
+.title {
+    text-align: center;
+    margin-top: 10%;
+    font-family: "Aclonica";
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+
+.text-p {
+    font-family: "Advent Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 57px;
+    color: white;
+}
+
+
+.text-p {
+
+}
+
+.title-content {
+    font-family: Advent Pro Bold;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    color: white;
+}
+
+.subtitle-content {
+    font-family: Advent Pro Light;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-top: 3%;
+    font-weight: 200;
+    color: white;
+}
+
+.subtitle {
+    font-family: Advent Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.content-text {
+    font-family: Advent Pro;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 5%;
+}
+
+#strong {
+    font-family: Advent Pro Bold;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.btn-personalizado {
+
+    text-decoration: none;
+    font-family: "Advent Pro Bold";
+    font-size: 1.5rem;
+}
